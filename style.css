@@ -32,7 +32,7 @@ video#video-background {
     width: auto;
     height: auto;
     z-index: -90;
-    background: rgba(0, 0, 0, 0.50);
+    background: rgba(143, 127, 127, 0.5);
 }
 
 p#carHeadings {
@@ -67,8 +67,20 @@ div#whiteBackground {
     text-align: justify;
 }
 
+div#blackBackground {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 130px 100px;
+    text-align: justify;
+}
+
 .space {
     margin-top: 200px;
+}
+
+.smallSpace {
+    margin-top: 50px;
 }
 
 h1#mainHeader {
@@ -114,6 +126,31 @@ nav#hoverNav {
     padding-top: 0px;
     padding-bottom: 0px;
     z-index: 10;
+}
+
+div#hoverDiv {
+    opacity: 1;
+    display: table;
+    top: 0;
+    font-family: "Time New Roman";
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    z-index: 10;
+}
+
+.menuList {
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: impact;
+    text-shadow: 1px 1px #000000;
 }
 
 button {
@@ -225,7 +262,7 @@ button:focus {
     opacity: 1;
 }
 
-.personal{
+.personal {
     padding-top: 55px;
     padding-bottom: 80px;
     color: white;
@@ -233,54 +270,105 @@ button:focus {
     background: url(Pictures/wood.jpeg) repeat fixed 100%;
     z-index: -1;
 }
-.firstPersonal h1{
-    color: white;
+
+.firstPersonal h1 {
+    color: black;
     margin-bottom: 2em;
     margin-right: 10%;
     font-family: 'Cedarville Cursive', cursive;
-    text-shadow: 2px 2px #000000;
-
 }
-.firstPersonal p{
+
+.firstPersonal p {
     margin-right: 10%;
     padding: 1em;
-    background-color: white;
-    color: opacity;/*edited, it is supposed to be 0*/
+    background-color: #666;
+    color: opacity;
+    /*edited, it is supposed to be 0*/
     border-radius: 10px;
 }
-.secondPersonal p{
+
+.secondPersonal p {
     color: white;
     text-align: left;
 }
 
+i {
+    font-style: italic;
+}
+
+h1 {
+    font-family: "Cedarville Cursive";
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+}
+
+h3 {
+    font-family: "Cedarville Cursive";
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 15.4px;
+}
+
+p {
+    font-family: "Cedarville Cursive";
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+blockquote {
+    font-family: "Cedarville Cursive";
+    font-size: 21px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+pre {
+    font-family: "Cedarville Cursive";
+    font-size: 13px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 18.5714px;
+}
+
 /*github giant logo that has links*/
-.github{
+
+.github {
     /*margin*/
     max-width: 50em;
-    width:40%;
+    width: 40%;
     margin-right: auto;
     margin-left: auto;
     /*text allign*/
     text-align: center;
     font-weight: 100;
-    color: #666;
     padding-bottom: 1em;
 }
-.personalTable{
+
+.personalTable {
     /*margin*/
     max-width: 50em;
-    width:90%;
+    width: 90%;
     margin-right: auto;
     margin-left: auto;
     /*text allign*/
     text-align: center;
     font-weight: 300;
-    color: #666;
+    color: #000000;
 }
 
-.secondPersonal p{
+.secondPersonal p {
     color: white;
     text-align: left;
     text-shadow: 2px 2px #000000;
-
 }
